@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="telegrambotsextensions" type="Project" date="2018-09-16" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1,551" stddev = "1,47" max = "10">
+         <Value name="TimedSendLongPollingBot.MessageSenderTask#run" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="10"/>
+         <Value name="execute" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="5"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="executeCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="onUpdateReceived" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="5"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getCurrentState" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="5"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="toMan" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="deregisterAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="deregister" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="registerAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="register" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="removeUsernameFromCommandIfNeeded" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="sendTimed" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getExtendedDescription" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="toMan" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getExtendedDescription" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="execute" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getCommandIdentifier" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getDescription" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="toString" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommands" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getCommandIdentifier" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getDescription" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="deregisterAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="deregister" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommands" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="register" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregisterAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregister" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="filter" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getBotUsername" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommands" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommand" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processInvalidCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processNonCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerDefaultAction" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="register" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getChatId" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getPutTime" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#putMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="finish" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="sendMessageCallback" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "1,188" stddev = "1,146" max = "5">
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="execute" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="4"/>
+         <Value name="execute" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="processMessage" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="processMessage" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="processMessage" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="3"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="executeCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="2"/>
+         <Value name="sendMessageCallback" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="sendTimed" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="deregisterAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="deregister" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="register" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="removeUsernameFromCommandIfNeeded" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="deregisterAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="deregister" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="register" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregisterAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregister" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="filter" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommand" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="onUpdateReceived" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processInvalidCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processNonCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerDefaultAction" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="register" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getCurrentState" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#putMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="getExtendedDescription" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="toMan" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="getExtendedDescription" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="toMan" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="getCommandIdentifier" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getDescription" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="toString" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommands" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getCommandIdentifier" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getDescription" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommands" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getBotUsername" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="getRegisteredCommands" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getChatId" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getPutTime" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask#run" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="finish" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1,043" stddev = "0,892" max = "4">
+         <Value name="execute" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="4"/>
+         <Value name="executeCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="onUpdateReceived" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="4"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask#run" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="3"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="deregisterAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="deregister" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="registerAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="register" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="removeUsernameFromCommandIfNeeded" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="sendTimed" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getExtendedDescription" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="toMan" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getCommandIdentifier" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getDescription" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="toString" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommands" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregisterAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregister" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="filter" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getBotUsername" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommands" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommand" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processInvalidCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerDefaultAction" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="register" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getChatId" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getCurrentState" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getPutTime" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#putMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="finish" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="getExtendedDescription" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="toMan" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="execute" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getCommandIdentifier" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getDescription" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="processMessage" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="deregisterAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="deregister" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommands" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommand" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="registerAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="registerDefaultAction" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="register" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="processNonCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="sendMessageCallback" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "0,75" stddev = "1,299" max = "3">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "2,25" stddev = "1,639" max = "5">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "0,906" stddev = "0,162" max = "1">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,625"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0,7" stddev = "0,243" max = "1">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,8"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0,667"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0,333"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0,606" stddev = "0,258" max = "1">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0,667"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,425"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0,333"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "1,667" stddev = "1,374" max = "4">
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="4"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="4"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "107" avg = "8,917" stddev = "5,649" max = "19">
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="19"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="19"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="14"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="10"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="10"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="10"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="7"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="5"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="4"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "7" avg = "0,583" stddev = "0,759" max = "2">
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "2" avg = "0,167" stddev = "0,373" max = "1">
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0,292" stddev = "0,366" max = "1">
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,75"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0,75"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,5"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0,5"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "17" avg = "1,417" stddev = "1,656" max = "4">
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="4"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="4"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="2"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "13" avg = "1,083" stddev = "1,552" max = "4">
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="4"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="3"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "64" avg = "5,333" stddev = "3,749" max = "15">
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="15"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="10"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="7"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="6"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="6"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="4"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="4"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="3"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "5" avg = "0,417" stddev = "1,382" max = "5">
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="5"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0,056" stddev = "0,142" max = "0,5">
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,5"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0,167"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="IManCommand" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="IBotCommand" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="ICommandRegistry" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+         <Value name="TimedSendLongPollingBot.MessageSenderTask" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "12" avg = "3" stddev = "1,414" max = "5">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="3"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="3"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "3" avg = "0,75" stddev = "0,829" max = "2">
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.commandbot" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+         <Value name="org.telegram.telegrambots.extensions.bots.timedbot" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="4"/>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="471"/>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "239" avg = "3,464" stddev = "6,68" max = "41">
+         <Value name="TimedSendLongPollingBot.MessageSenderTask#run" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="41"/>
+         <Value name="sendMessageCallback" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="27"/>
+         <Value name="execute" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="19"/>
+         <Value name="executeCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="17"/>
+         <Value name="sendTimed" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="13"/>
+         <Value name="BotCommand" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="11"/>
+         <Value name="removeUsernameFromCommandIfNeeded" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="10"/>
+         <Value name="onUpdateReceived" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="10"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getCurrentState" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="10"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="6"/>
+         <Value name="toMan" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="6"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="5"/>
+         <Value name="deregisterAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="deregister" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="registerAll" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="register" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="5"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="3"/>
+         <Value name="ManCommand" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="2"/>
+         <Value name="toString" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="CommandRegistry" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="2"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#putMessage" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="2"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="HelpCommand" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getHelpText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getManText" source ="HelpCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getExtendedDescription" source ="ManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="1"/>
+         <Value name="getCommandIdentifier" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getDescription" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommands" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="getRegisteredCommand" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="registerDefaultAction" source ="CommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="DefaultBotCommand" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="processMessage" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TelegramLongPollingCommandBot" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregisterAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="deregister" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="filter" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getBotUsername" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommands" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="getRegisteredCommand" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="processInvalidCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerAll" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="registerDefaultAction" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="register" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#MessageQueue" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getChatId" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot.MessageQueue#getPutTime" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="TimedSendLongPollingBot" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="finish" source ="TimedSendLongPollingBot.java" package ="org.telegram.telegrambots.extensions.bots.timedbot" value ="1"/>
+         <Value name="getExtendedDescription" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="toMan" source ="IManCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands.helpCommand" value ="0"/>
+         <Value name="execute" source ="BotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="execute" source ="DefaultBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getCommandIdentifier" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getDescription" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="processMessage" source ="IBotCommand.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="deregisterAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="deregister" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommands" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="getRegisteredCommand" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="registerAll" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="registerDefaultAction" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="register" source ="ICommandRegistry.java" package ="org.telegram.telegrambots.extensions.bots.commandbot.commands" value ="0"/>
+         <Value name="processNonCommandUpdate" source ="TelegramLongPollingCommandBot.java" package ="org.telegram.telegrambots.extensions.bots.commandbot" value ="0"/>
+      </Values>
+   </Metric>
+   </Metrics>
