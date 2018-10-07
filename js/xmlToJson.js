@@ -81,19 +81,21 @@ function xmlToJson(xml) {
 	}
 	return obj;
 };
+
 function execute() {
 
 	console.log(metricas);
 	metricas.map(e => {
 		const filename = e.name + '.json';
-		const jsonStr = JSON.stringify(e);
+		const jsonStr = JSON.stringify(e.arrayAll);
 		let element = document.createElement('a');
 		element.text = "Download " + e.name;
 		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(jsonStr));
 		element.setAttribute('download', filename);
-		document.body.appendChild(element);
-		document.body.appendChild(document.createElement('br'));
+		document.getElementById("downloads").appendChild(element);
+		document.getElementById("downloads").appendChild(document.createElement('br'));
 	});
 }
 
+//Ponto de partida;
 leitura(destinyMetricas[0]);
