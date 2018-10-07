@@ -16,13 +16,11 @@ function leitura(destiny) {
 
 		var xmlDoc = this.responseXML; // <- Here the XML file
 		var jsonXml = xmlToJson(xmlDoc);
-
 		const obj = {
 			name: jsonXml.Metrics["@attributes"].scope,
-			arrayAll: jsonXml.Metrics.Metric, 
-			arrayValues: jsonXml.Metrics.Metric.reduce((a, e) => {return a.concat(e.Values == undefined? e.Value: e.Values);}, []).reduce((a, e) => {return a.concat(e["@attributes"]);}, []),
-			arrayMetrics: jsonXml.Metrics.Metric.reduce((a, e) => {return a.concat(e["@attributes"]);}, [])
-
+			arrayAll: jsonXml.Metrics.Metric.reduce((a, e) => { return a.concat([e, e.Values == undefined ? e.Value : e.Values]); }, []).reduce((a, e) => { return a.concat(e["@attributes"]); }, []),
+			arrayValues: jsonXml.Metrics.Metric.reduce((a, e) => { return a.concat(e.Values == undefined ? e.Value : e.Values); }, []).reduce((a, e) => { return a.concat(e["@attributes"]); }, []),
+			arrayMetrics: jsonXml.Metrics.Metric.reduce((a, e) => { return a.concat(e["@attributes"]); }, [])
 		}
 
 		metricas.push(obj); // Inserindo metricas de um modulo;
@@ -83,43 +81,19 @@ function xmlToJson(xml) {
 	}
 	return obj;
 };
-
 function execute() {
 
 	console.log(metricas);
-
-	var table = document.createElement('table');
-
-	metricas.map((e, i) => {
-		var tr = document.createElement('tr');
-
-		var td1 = document.createElement('td');
-
-		var name = document.createTextNode(e.name);
-
-
-		td1.appendChild(name);
-
-		tr.appendChild(td1);
-
-		if (i == 0) {
-			let tr = document.createElement('tr');
-			var td1 = document.createElement('td').appendChild(document.createTextNode('-'));
-			tr.appendChild(td1);
-			table.appendChild(tr);
-			metricas.map(m => {
-				var td1 = document.createElement('td');
-				var name = document.createTextNode("  " + m.name + "  ");
-				td1.appendChild(name);
-				tr.appendChild(td1);
-			});
-			table.appendChild(tr);
-		}
-
-		table.appendChild(tr);
+	metricas.map(e => {
+		const filename = e.name + '.json';
+		const jsonStr = JSON.stringify(e);
+		let element = document.createElement('a');
+		element.text = "Download " + e.name;
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(jsonStr));
+		element.setAttribute('download', filename);
+		document.body.appendChild(element);
+		document.body.appendChild(document.createElement('br'));
 	});
-
-	document.body.appendChild(table);
 }
 
 leitura(destinyMetricas[0]);
