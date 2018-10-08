@@ -95,7 +95,105 @@ function execute() {
 		document.getElementById("downloads").appendChild(element);
 		document.getElementById("downloads").appendChild(document.createElement('br'));
 	});
+
+	//var cont = 0;
+
+
+	//metricas.map(e => {console.log(e.arrayValues[11].avg);cont += parseFloat(e.arrayValues[11].avg.replace(/,/,'.'))});
+	//console.log("MEDIA "+cont/6);
+
+	metricas[0].arrayMetrics.map((e, i) => (i !== 3 && i !== 4) ? makeTables(i):"");
+
 }
+
+function makeTables(pos) {
+	var tabelas = document.getElementById("tabelas");
+	tabelas.appendChild(document.createElement('br'));
+
+	let table = document.createElement('table');
+
+	let tr = document.createElement('tr');
+	var td = document.createElement('td').appendChild(document.createTextNode(metricas[0].arrayMetrics[pos].description));
+	tr.appendChild(td);
+	table.appendChild(tr);
+	metricas.map(m => {
+		var td = document.createElement('td');
+		var name = document.createTextNode("  " + m.name + "  ");
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+
+	//Total
+	tr = document.createElement('tr');
+	td = document.createElement('td');
+	var name = document.createTextNode("Total");
+	td.appendChild(name);
+	tr.appendChild(td);
+	metricas.map(e => {
+		var td = document.createElement('td');
+		var name = document.createTextNode(e.arrayValues[pos].total === undefined ? "-" : e.arrayValues[pos].total);
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+
+	//Total
+	tr = document.createElement('tr');
+	td = document.createElement('td');
+	td.appendChild(document.createTextNode("Máximo"));
+	tr.appendChild(td);
+	metricas.map(e => {
+		var td = document.createElement('td');
+		var name = document.createTextNode(e.arrayValues[pos].max === undefined ? "-" : e.arrayValues[pos].max);
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+
+	//Média
+	tr = document.createElement('tr');
+	td = document.createElement('td');
+	td.appendChild(document.createTextNode("Média"));
+	tr.appendChild(td);
+	metricas.map(e => {
+		var td = document.createElement('td');
+		var name = document.createTextNode(e.arrayValues[pos].avg === undefined ? "-" : e.arrayValues[pos].avg);
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+
+	//Desvio Padrão
+	tr = document.createElement('tr');
+	td = document.createElement('td');
+	td.appendChild(document.createTextNode("Desvio Padrão"));
+	tr.appendChild(td);
+	metricas.map(e => {
+		var td = document.createElement('td');
+		var name = document.createTextNode(e.arrayValues[pos].stddev === undefined ? "-" : e.arrayValues[pos].stddev);
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+	tabelas.appendChild(table);
+
+	//Desvio Padrão
+	tr = document.createElement('tr');
+	td = document.createElement('td');
+	td.appendChild(document.createTextNode("Valor"));
+	tr.appendChild(td);
+	metricas.map(e => {
+		var td = document.createElement('td');
+		var name = document.createTextNode(e.arrayValues[pos].value === undefined ? "-" : e.arrayValues[pos].value);
+		td.appendChild(name);
+		tr.appendChild(td);
+	});
+	table.appendChild(tr);
+	tabelas.appendChild(table);
+}
+
+
 
 //Ponto de partida;
 leitura(destinyMetricas[0]);
