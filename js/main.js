@@ -39,7 +39,7 @@ function calculeMetricsOfAll(pos) {
     cont = 0;
     metricas.map(e => {
         if (e.name !== 'Todos os módulos' && e.arrayValues[pos].max !== undefined)
-            cont = parseInt(e.arrayValues[pos].max) > cont ? parseInt(e.arrayValues[pos].max) : cont;
+            cont = parseFloat(e.arrayValues[pos].max.replace(/,/, '.')) > cont ? parseFloat(e.arrayValues[pos].max.replace(/,/, '.')) : cont;
     });
     cont = cont === 0 ? '' : obj.max = cont;
 
